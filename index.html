@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO -->
+<title>Progivy | Online Programming Courses for Kids & Adults</title>
+
+<meta name="description" content="Progivy offers online programming courses for kids and adults. Learn Scratch for kids, Frontend, Backend, and Full Stack development with practical projects and live sessions.">
+
+<meta name="keywords" content="programming courses, online coding courses, scratch for kids, full stack course, frontend course, backend course, learn programming online, kids coding classes, adult programming courses">
+
+<meta name="author" content="Progivy Team">
+<meta name="copyright" content="© 2026 Progivy. All rights reserved.">
+
+<!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
+<meta property="og:title" content="Progivy | Learn Programming Online for Kids & Adults">
+<meta property="og:description" content="Online programming courses for kids and adults. Scratch, Frontend, Backend, and Full Stack with real projects and live classes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+<!--  تعديل الكونتت بعد ربط الموقع ب الدومين -->
+<meta property="og:image" content="Images/og-image.jpg">
+
+
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="cube-loader">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+            <h2 class="loading-text">Loading<span class="dots"></span></h2>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-3d">
+                         <img src="Images/logoo.jpeg" >
+                    </div>
+                    <span>Pro<strong>givy</strong></span>
+                </div>
+               
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#highlights" class="nav-link"> How We Teach</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+
+                <div class="nav-right">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                    <button class="cta-btn">Get Started</button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-ball ball-1"></div>
+            <div class="gradient-ball ball-2"></div>
+            <div class="gradient-ball ball-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right">
+                    <div class="badge">
+                        
+                        <span>Learn Programming</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Build Your Future With
+                        <span class="gradient-text">Coding Skills</span>
+                    </h1>
+                    <p class="hero-description">
+                        Empower kids and adults with modern programming skills through interactive online courses. 
+                        From Scratch for kids to Full-Stack development for adults — all taught step by step by experienced instructors.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <span>Start Learning Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    
+                             <button class="btn btn-secondary" id="contactBtn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </button>
+
+                       
+
+                    </div>
+                    
+                </div>
+
+                
+                <div class="hero-visual" data-aos="fade-left">
+
+                    <!-- المكعب 3D تحت كل حاجة -->
+                    <div class="cube-3d">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+
+                    <!-- النصوص فوق المكعب والبطاقات -->
+                    <div class="text-layer">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="card-text">
+                                <h4>Learn Anywhere</h4>
+                                <p>100% Online Courses</p>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="card-text">
+                                <h4>Start from Scratch</h4>
+                                <p>No Experience Needed</p>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-rocket"></i>
+                            <div class="card-text">
+                                <h4>Future Skills</h4>
+                                <p>Prepare for the Tech World</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        
+
+
+    </section>
+
+    <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">ABOUT PROGIVY</span>
+
+            <!-- H2 مع كل كلمة في span لتلوينها -->
+            <h2 class="section-title">
+                <span>Learn</span>
+                <span>Compete</span>
+                <span>and</span>
+                <span>Grow</span>
+                <span>with</span>
+                <span>Progivy</span>
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="section-description">
+                Progivy offers expert-led programming courses for all ages — from Scratch for kids to Full Stack for adults — 
+                including practical AI applications. Our experienced instructors (3+ years) ensure interactive live learning with 
+                continuous support even after your course ends.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>Live Interactive Learning</h3>
+                <p>Experience real-time lessons with our expert instructors, designed to keep you engaged.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Challenges & Competitions</h3>
+                <p>Participate in tasks and contests to boost your skills and compete with peers.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>Hands-On Projects</h3>
+                <p>Work on projects of different levels to practice problem-solving and real-world coding skills.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Continuous Support</h3>
+                <p>Receive guidance and mentorship during and even after the course completion.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>Problem Solving Skills</h3>
+                <p>Enhance your analytical thinking and coding problem-solving through structured tasks.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Integration</h3>
+                <p>Learn how to apply Artificial Intelligence in programming and modern tech applications.</p>
+            </div>
+        </div>
+
+        <!-- Centered Slogan -->
+        <div class="section-footer" data-aos="fade-up" data-aos-delay="700">
+            <h2 class="section-slogan">
+                <span>Progivy</span> – <span>Where</span> <span>Coders</span> <span>of</span> <span>Today</span> 
+                <span>Build</span> <span>the</span> <span>Innovators</span> <span>of</span> <span>Tomorrow</span>
+            </h2>
+        </div>
+    </div>
+</section>
+
+
+<!-- //////////////////////////////////////// -->
+<!--             section  courses       -->
+ 
+            <section id="courses" class="courses">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">OUR COURSES</span>
+                        <h2 class="section-title">
+                            <span>Explore</span>
+                            <span>and</span>
+                            <span>Learn</span>
+                            <span>With</span>
+                            <span>Progivy</span>
+                        </h2>
+                        <p class="section-description">
+                            Choose from courses tailored for all levels — Scratch for kids, Frontend & Backend for full-stack developers, 
+                            and advanced tools like AI, Git, GitHub, and React. Every course comes with hands-on projects and practical skills.
+                        </p>
+                    </div>
+
+                    <!-- Courses Grid -->
+                    <div class="courses-grid">
+                        <!-- Example Course Card -->
+                        <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="course-image">
+                                <img src="Images/front.jpeg" alt="Front-End Course">
+                            </div>
+                            <div class="course-content">
+                                <h3>Front-End Development</h3>
+                                <p>Learn HTML, CSS, JavaScript, Bootstrap, jQuery, and React to build responsive and dynamic web interfaces.</p>
+                                <p><strong>Skills:</strong> HTML, CSS, JS, Bootstrap, jQuery, React</p>
+                                 <p><strong>Duration:</strong> 4 Months</p>
+                                 <p><strong>Sessions:</strong> 2 – 3 per week</p>
+                            </div>
+                        </div>
+
+                        <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="course-image">
+                                <img src="Images/back.jpeg" alt="Back-End Course">
+                            </div>
+                            <div class="course-content">
+                                <h3>Back-End Development</h3>
+                                <p>Master PHP, databases, Laravel framework, and server-side programming to create full-stack applications.</p>
+                                <p><strong>Skills:</strong> PHP, MySQL, Laravel, Data Management</p>
+                                 <p><strong>Duration:</strong> 3 Months</p>
+                                  <p><strong>Sessions:</strong> 2 – 3 per week</p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="course-image">
+                                <img src="images/ai.jpeg" alt="AI & Tools Course">
+                            </div>
+                            <div class="course-content">
+                                <h3>AI Tools & Modern Skills</h3>
+                                <p>Learn practical AI applications, coding tools, Git, GitHub, and libraries to enhance your developer skills.</p>
+                                <p><strong>Skills:</strong> AI, Git, GitHub, Libraries, Tools</p>
+                                 <p><strong>Duration:</strong> 4 Sessions</p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="course-image">
+                                <img src="Images/scratch.jpeg" alt="Scratch for Kids">
+                            </div>
+                            <div class="course-content">
+                                <h3>Scratch for Kids</h3>
+                                <p>Introduce children to coding using Scratch with interactive, playful projects that develop logic and creativity.</p>
+                                <p><strong>Skills:</strong> Scratch, Logical Thinking, </p>
+                                <p><strong>Duration:</strong> 1 Month</p>
+                                <p><strong>Sessions:</strong> 2  per week</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Centered Slogan -->
+                    <div class="section-footer" data-aos="fade-up" data-aos-delay="500">
+                        <h2 class="section-slogan">
+                            <span>Progivy</span> – <span>Learn</span>, <span>Practice</span> <span>and</span> <span>Build</span> <span>Your</span> <span>Future</span>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+   <!-- FAQ Section -->
+<section id="faq" class="faq">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">
+                Answers to the most common questions about starting coding for adults and kids.
+            </p>
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="faq-grid">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">Do I need prior experience to start coding as an adult?</div>
+                <div class="faq-answer">
+                    No! Our courses are designed for <span class="highlight">beginners</span> with no prior experience. 
+                    You will learn step by step with guided exercises.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">Can my child start learning coding if they are under 10?</div>
+                <div class="faq-answer">
+                    Absolutely! We offer <span class="highlight">Scratch</span> courses designed for kids to learn logic and creativity 
+                    in a playful way.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question">Do I get support after completing the course?</div>
+                <div class="faq-answer">
+                    Yes! We provide continuous <span class="highlight">mentorship</span> and guidance even after the course ends.
+                </div>
+            </div>
+
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="faq-question">Is coding too difficult for someone with no tech background?</div>
+                <div class="faq-answer">
+                    Not at all! Our courses are designed for <span class="highlight">absolute beginners</span>. Step by step, you'll gain confidence and understanding.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+                <div class="faq-question">Will my child get bored learning coding?</div>
+                <div class="faq-answer">
+                    Never! Our <span class="highlight">interactive Scratch projects</span> make learning fun and engaging, keeping kids curious and motivated.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="800">
+                <div class="faq-question">I’m worried I won’t have time to learn coding regularly. What should I do?</div>
+                <div class="faq-answer">
+                    Don’t worry! Our courses are flexible and include <span class="highlight">short, structured lessons</span> that fit into any schedule.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="900">
+                <div class="faq-question">What if I make mistakes or don’t understand something?</div>
+                <div class="faq-answer">
+                    Mistakes are part of learning! You’ll have <span class="highlight">mentorship and support</span> to guide you until you fully understand each concept.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="1000">
+                <div class="faq-question">Is it too late to start learning programming as an adult?</div>
+                <div class="faq-answer">
+                    It’s never too late! Many adults start from scratch and successfully build <span class="highlight">coding skills</span> and career opportunities.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="1100">
+                <div class="faq-question">How do I know if my child is ready for coding?</div>
+                <div class="faq-answer">
+                    If your child is curious, enjoys solving problems, or likes games and puzzles, they are ready to start learning <span class="highlight">coding in a fun way</span>.
+                </div>
+            </div>          
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Company Highlights & Motivational Text Section -->
+<section id="highlights" class="highlights-carousel">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-down">
+            <span class="section-badge">WHY CHOOSE PROGIVY</span>
+            <h2 class="section-title">Empowering Students Every Step of the Way</h2>
+        </div>
+
+        <!-- Features List -->
+        <div class="features-list" data-aos="fade-up">
+            <p class="feature">
+                Daily <span class="highlight-text">student support</span> with guidance and tips to stay on track.
+            </p>
+            <p class="feature">
+                
+                Learn through<span class="highlight-text"> fun and motivating</span>challenges.
+            </p>
+            <p class="feature">
+                Work on <span class="highlight-text">hands-on projects</span> to prepare for real-world jobs.
+            </p>
+            <p class="feature">
+                Participate in <span class="highlight-text">interactive lectures</span> and problem-solving sessions.
+            </p>
+            <p class="feature">
+                Learn <span class="highlight-text">practical skills</span> like Git, GitHub, AI tools, and modern programming.
+            </p>
+        </div>
+
+        <!-- Motivational Text Carousel -->
+        <div class="motivational-carousel" data-aos="fade-up" data-aos-delay="300">
+            <div class="motivation-pair active">
+                <p class="motivation">Start today, code your future!</p>
+                <p class="motivation">Every challenge makes you stronger.</p>
+            </div>
+            <div class="motivation-pair">
+                <p class="motivation">From Scratch to Full Stack, we guide you every step.</p>
+                <p class="motivation">Your learning, your pace, your growth.</p>
+            </div>
+            <div class="motivation-pair">
+                <p class="motivation">Practice daily and achieve mastery.</p>
+                <p class="motivation">Challenges today, skills for tomorrow.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                      <h2>Your Next Step Starts Here</h2>
+                            <p>
+                            Whether you want to learn programming, build real skills, or explore new opportunities,
+                            we’re here to guide you from the first step.
+                            </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>progivyacademy@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>01040700072</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                      <div class="social-links">
+                <a href="https://www.facebook.com/share/1C2jzarxDP/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://wa.me/201234567890" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+                </div>
+
+                        <form 
+                        class="contact-form" 
+                        action="https://formspree.io/f/mreabbwp"
+                        method="POST"
+                        data-aos="fade-left"
+                        id="contactForm"
+                        >
+    <!-- Hidden input for thank you page -->
+     <input type="hidden" name="_next" value="thankyou.html">
+     <input type="hidden" name="_captcha" value="false">
+
+
+
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <i class="fas fa-user"></i>
+    </div>
+
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <i class="fas fa-envelope"></i>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+        <i class="fas fa-tag"></i>
+    </div>
+
+    <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <button type="submit" class="submit-btn">
+        <span>Send Message</span>
+        <i class="fas fa-paper-plane"></i>
+    </button>
+                        </form>
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer">
+         <div class="footer-top">
+        <!-- الشمال: اللوجو والاسم -->
+        <div class="footer-brand floating-logo">
+            <img src="Images/logoo.jpeg" alt="Progivy Logo">
+            <span>Progivy</span>
+        </div>
+
+        <!-- اليمين: روابط الصفحات -->
+        <ul class="footer-links">
+              <li><a href="#home" >Home</a></li>
+                    <li><a href="#features" >About</a></li>
+                    <li><a href="#courses" >Courses</a></li>
+                    <li><a href="#faq" >FAQ</a></li>
+                    <li><a href="#highlights" > How We Teach</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- الوسط: الجملة التشجيعية -->
+    <p class="footer-cta">Start your programming journey today and unleash your potential!</p>
+
+    <!-- الأسفل: حقوق الموقع -->
+    <p class="footer-rights">&copy; 2026 Progivy. All rights reserved.</p>
+
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <!-- Copyright (c) 2026 Progivy
+Based on original work by Omkarghare8 (MIT License)
+ -->
+</body>
+</html>
