@@ -1146,10 +1146,14 @@ body.dark-mode .faq-answer {
     color: var(--text-primary-light);
 }
 
+
+
 .features-list .highlight-text {
     color: var(--primary-color);
     font-weight: 600;
 }
+
+
 
 /* Motivational Carousel (Pairs) */
 .motivational-carousel {
