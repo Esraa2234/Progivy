@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Progivy | دورات برمجة أونلاين للأطفال والكبار</title>
+
+    <meta name="description" content="Progivy منصة تعليم برمجة أونلاين للأطفال والكبار. دورات Scratch للأطفال، Frontend، Backend و Full Stack مع مشاريع عملية ودعم مباشر.">
+    <meta name="keywords" content="تعلم البرمجة, برمجة للأطفال, دورات برمجة أونلاين, فول ستاك, فرونت اند, باك اند, Scratch">
+    <meta name="author" content="Progivy Team">
+    <meta name="copyright" content="© 2026 Progivy. All rights reserved.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Progivy | تعلم البرمجة أونلاين للأطفال والكبار">
+    <meta property="og:description" content="دورات برمجة تفاعلية من Scratch للأطفال إلى Full Stack للكبار مع مشاريع حقيقية.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader-content">
+        <div class="cube-loader">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <h2 class="loading-text">جاري التحميل<span class="dots"></span></h2>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="logo">
+                <span>Pro<strong>givy</strong></span>
+
+                <div class="logo-3d">
+
+                    <img src="Images/logoo.jpeg">
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#features" class="nav-link">عن Progivy</a></li>
+                <li><a href="#courses" class="nav-link">الكورسات</a></li>
+                <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                <li><a href="#highlights" class="nav-link">طريقة التعليم</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                  <button class="lang-toggle cta-btn" id="langToggle">EN</button>
+
+               
+
+              
+
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- الخلفية مع الكرات المتدرجة -->
+            <div class="hero-bg">
+                <div class="gradient-ball ball-1"></div>
+                <div class="gradient-ball ball-2"></div>
+                <div class="gradient-ball ball-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <!-- النصوص -->
+                    <div class="hero-text" data-aos="fade-right">
+                        <div class="badge">
+                            <span>تعلم البرمجة</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            ابنِ مستقبلك مع
+                            <span class="gradient-text">مهارات البرمجة</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            في Progivy، نساعد الأطفال والكبار على تعلم البرمجة من الصفر إلى الاحتراف
+                            من خلال كورسات أونلاين تفاعلية، مشاريع عملية، ودعم مباشر من مدربين محترفين.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">
+                                <span>ابدأ التعلم الآن</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+
+                            <button class="btn btn-secondary" id="contactBtn">
+                                <i class="fas fa-envelope"></i>
+                                <span>تواصل معنا</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- البطاقات والمكعب 3D -->
+                    <div class="hero-visual" data-aos="fade-left">
+                        <!-- المكعب 3D -->
+                        <div class="cube-3d">
+                            <div class="cube-face front"></div>
+                            <div class="cube-face back"></div>
+                            <div class="cube-face right"></div>
+                            <div class="cube-face left"></div>
+                            <div class="cube-face top"></div>
+                            <div class="cube-face bottom"></div>
+                        </div>
+
+                        <!-- البطاقات العائمة فوق المكعب -->
+                        <div class="text-layer">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-laptop-code"></i>
+                                <div class="card-text">
+                                    <h4>تعلّم من أي مكان</h4>
+                                    <p>كورسات أونلاين 100%</p>
+                                </div>
+                            </div>
+
+                            <div class="floating-card card-2">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="card-text">
+                                    <h4>ابدأ من الصفر</h4>
+                                    <p>لا تحتاج إلى خبرة مسبقة</p>
+                                </div>
+                            </div>
+
+                            <div class="floating-card card-3">
+                                <i class="fas fa-rocket"></i>
+                                <div class="card-text">
+                                    <h4>مهارات المستقبل</h4>
+                                    <p>استعد لعالم التكنولوجيا</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- نهاية hero-visual -->
+
+                </div>
+            </div>
+        </section>
+
+
+<!-- Features -->
+<section id="features" class="features">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">عن Progivy</span>
+
+            <!-- H2 مع كل كلمة في span -->
+            <h2 class="section-title">
+                <span>تعلّم</span>
+                <span>_</span>
+                <span>تنافس</span>
+                <span>_</span>
+                <span>وتطوّر</span>
+                <span>مع</span>
+                <span>Progivy</span>
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="section-description">
+                تقدم Progivy دورات برمجة احترافية لجميع الأعمار — من Scratch للأطفال إلى Full Stack للكبار — 
+                مع تطبيقات عملية في الذكاء الاصطناعي. يقدّمها مدربون خبرتهم أكثر من 3 سنوات لضمان تعلم تفاعلي مباشر 
+                ودعم مستمر حتى بعد انتهاء الكورس.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>تعلم مباشر وتفاعلي</h3>
+                <p>محاضرات أونلاين مباشرة مع مدربين محترفين لضمان التفاعل والفهم الكامل.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                <h3>تحديات ومسابقات</h3>
+                <p>شارك في مهام ومسابقات لتنمية مهاراتك والتنافس مع الآخرين.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>مشاريع حقيقية</h3>
+                <p>العمل على مشاريع عملية تحاكي سوق العمل لتطبيق مهارات البرمجة.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+                <h3>دعم مستمر</h3>
+                <p>احصل على التوجيه والمتابعة أثناء وبعد انتهاء الدورة.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>تنمية مهارات التفكير</h3>
+                <p>طور مهاراتك التحليلية وحل المشكلات من خلال مهام منظمة.</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>تطبيق الذكاء الاصطناعي</h3>
+                <p>تعلم كيفية استخدام الذكاء الاصطناعي في البرمجة والتقنيات الحديثة.</p>
+            </div>
+        </div>
+
+        <!-- Centered Slogan -->
+        <div class="section-footer" data-aos="fade-up" data-aos-delay="700">
+            <h2 class="section-slogan">
+                <span>Progivy</span> – <span>حيث</span> <span>يبني</span> <span>المبرمجون</span> 
+                <span>اليوم</span> <span>مبتكري </span> <span> الغد</span>
+            </h2>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Courses -->
+<section id="courses" class="courses">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">كورساتنا</span>
+            <h2 class="section-title">
+                <span>استكشف</span>
+                <span>وتعلّم</span>
+                <span>مع</span>
+                <span>Progivy</span>
+            </h2>
+            <p class="section-description">
+                اختر من بين كورسات مصممة لجميع المستويات — Scratch للأطفال، Frontend و Backend للمطورين، 
+                وأدوات متقدمة مثل الذكاء الاصطناعي، Git، GitHub، و React. كل كورس يأتي مع مشاريع عملية ومهارات تطبيقية.
+            </p>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="courses-grid">
+            <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-image">
+                    <img src="Images/front.jpeg" alt="Front-End Course">
+                </div>
+                <div class="course-content">
+                    <h3>تطوير الواجهه الأمامية (Front-End)</h3>
+                    <p>تعلم HTML، CSS، JavaScript، Bootstrap، jQuery، و React لبناء مواقع ديناميكية واستجابة.</p>
+                    <p><strong>المهارات:</strong> HTML، CSS، JS، Bootstrap، jQuery، React</p>
+                    <p><strong>المدة:</strong> 4 شهور</p>
+                    <p><strong>عدد الجلسات:</strong> 2 – 3 في الأسبوع</p>
+                </div>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-image">
+                    <img src="Images/back.jpeg" alt="Back-End Course">
+                </div>
+                <div class="course-content">
+                    <h3>تطوير الواجهه الخلفية (Back-End)</h3>
+                    <p>إتقان PHP، قواعد البيانات، Laravel، وبرمجة السيرفر لإنشاء تطبيقات متكاملة.</p>
+                    <p><strong>المهارات:</strong> PHP، MySQL، Laravel، إدارة البيانات</p>
+                    <p><strong>المدة:</strong> 3 شهور</p>
+                    <p><strong>عدد الجلسات:</strong> 2 – 3 في الأسبوع</p>
+                </div>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-image">
+                    <img src="Images/ai.jpeg" alt="AI & Tools Course">
+                </div>
+                <div class="course-content">
+                    <h3>أدوات الذكاء الاصطناعي والمهارات الحديثة</h3>
+                    <p>تعلم تطبيقات الذكاء الاصطناعي العملية، وأدوات البرمجة، Git، GitHub، والمكتبات لتطوير مهاراتك.</p>
+                    <p><strong>المهارات:</strong> الذكاء الاصطناعي، Git، GitHub، المكتبات، الأدوات</p>
+                    <p><strong>المدة:</strong> 4 جلسات</p>
+                </div>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="course-image">
+                    <img src="Images/scratch.jpeg" alt="Scratch for Kids">
+                </div>
+                <div class="course-content">
+                    <h3>Scratch للأطفال</h3>
+                    <p>تعليم الأطفال أساسيات البرمجة بطريقة ممتعة وتفاعلية لتطوير التفكير المنطقي والإبداع.</p>
+                    <p><strong>المهارات:</strong> Scratch، التفكير المنطقي</p>
+                    <p><strong>المدة:</strong> شهر</p>
+                    <p><strong>عدد الجلسات:</strong> 2 في الأسبوع</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centered Slogan -->
+        <div class="section-footer" data-aos="fade-up" data-aos-delay="500">
+            <h2 class="section-slogan">
+                <span>Progivy</span> – <span>تعلّم</span>، <span>طبّق</span> <span>وابنِ</span> <span>مستقبلك</span>
+            </h2>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">الأسئلة الشائعة</span>
+            <h2 class="section-title">أسئلة متكررة</h2>
+            <p class="section-description">
+                الإجابات على أكثر الأسئلة شيوعًا حول بدء تعلم البرمجة للأطفال والكبار.
+            </p>
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="faq-grid">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">هل أحتاج خبرة سابقة للبدء في تعلم البرمجة كبالغ؟</div>
+                <div class="faq-answer">
+                    لا! دوراتنا مصممة للمبتدئين تمامًا <span class="highlight">بدون أي خبرة سابقة</span>. ستتعلم خطوة بخطوة مع تمارين موجهة.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">هل يمكن لطفلي البدء في تعلم البرمجة إذا كان عمره أقل من 10 سنوات؟</div>
+                <div class="faq-answer">
+                    بالتأكيد! نقدم دورات <span class="highlight">Scratch</span> للأطفال لتعلم المنطق والإبداع بطريقة ممتعة وتفاعلية.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question">هل سأحصل على دعم بعد انتهاء الكورس؟</div>
+                <div class="faq-answer">
+                    نعم! نوفر <span class="highlight">دعم ومتابعة مستمرة</span> وإرشاد حتى بعد انتهاء الكورس.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="faq-question">هل تعلم البرمجة صعب لمن ليس لديه خلفية تقنية؟</div>
+                <div class="faq-answer">
+                    على الإطلاق! دوراتنا مصممة لـ <span class="highlight">المبتدئين تمامًا</span>. خطوة بخطوة ستكتسب الثقة والفهم.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+                <div class="faq-question">هل سيمل طفلي من تعلم البرمجة؟</div>
+                <div class="faq-answer">
+                    أبدًا! مشاريع <span class="highlight">Scratch التفاعلية</span> تجعل التعلم ممتعًا ومشوقًا، وتحافظ على فضول الأطفال وتحفيزهم.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="800">
+                <div class="faq-question">أخشى ألا أجد وقتًا كافيًا لتعلم البرمجة بانتظام، ماذا أفعل؟</div>
+                <div class="faq-answer">
+                    لا تقلق! دوراتنا مرنة وتشمل <span class="highlight">دروس قصيرة ومنظمة</span> تتناسب مع أي جدول.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="900">
+                <div class="faq-question">ماذا لو ارتكبت أخطاء أو لم أفهم شيئًا؟</div>
+                <div class="faq-answer">
+                    الأخطاء جزء من التعلم! سيكون لديك <span class="highlight">الدعم والإرشاد</span> حتى تفهم كل مفهوم تمامًا.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="1000">
+                <div class="faq-question">هل فات الأوان على تعلم البرمجة كبالغ؟</div>
+                <div class="faq-answer">
+                    لم يفت الأوان أبدًا! العديد من البالغين يبدأون من الصفر ويبنون بنجاح <span class="highlight">مهارات البرمجة</span> وفرصًا مهنية.
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="1100">
+                <div class="faq-question">كيف أعرف أن طفلي جاهز لتعلم البرمجة؟</div>
+                <div class="faq-answer">
+                    إذا كان طفلك فضوليًا، يحب حل المشكلات، أو يحب الألعاب والألغاز، فهو جاهز للبدء في تعلم <span class="highlight">البرمجة بطريقة ممتعة</span>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Highlights -->
+<section id="highlights" class="highlights-carousel">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-down">
+            <span class="section-badge">لماذا Progivy؟</span>
+            <h2 class="section-title">نرافقك خطوة بخطوة نحو النجاح</h2>
+        </div>
+
+        <!-- Features List -->
+        <div class="features-list" data-aos="fade-up"style="text-align: center;" >
+            <p class="feature" >
+                دعم <span class="highlight-text">يومي للطلاب</span> مع إرشادات ونصائح للبقاء على المسار الصحيح.
+            </p>
+            <p class="feature">
+                تعلم من خلال <span class="highlight-text">تحديات ممتعة ومحفزة</span>.
+            </p>
+            <p class="feature">
+                العمل على <span class="highlight-text">مشاريع عملية</span> للاستعداد لسوق العمل الحقيقي.
+            </p>
+            <p class="feature">
+                مشاركه في <span class="highlight-text">محاضرات تفاعلية</span> وجلسات لحل المشاكل 
+            </p>
+            <p class="feature">
+                تعلم <span class="highlight-text">مهارات عملية</span> مثل Git، GitHub، أدوات الذكاء الاصطناعي، والبرمجة الحديثة.
+            </p>
+        </div>
+
+        <!-- Motivational Text Carousel -->
+        <div class="motivational-carousel" data-aos="fade-up" data-aos-delay="300">
+            <div class="motivation-pair active">
+                <p class="motivation">ابدأ اليوم، وابدأ برمجة مستقبلك!</p>
+                <p class="motivation">كل تحدٍ يجعلك أقوى</p>
+            </div>
+            <div class="motivation-pair">
+                <p class="motivation">من Scratch إلى Full Stack، نرشدك في كل خطوة</p>
+                <p class="motivation">تعلمك على راحتك، وتطورك على طريقتك</p>
+            </div>
+            <div class="motivation-pair">
+                <p class="motivation">مارس يوميًا وحقق الإتقان</p>
+                <p class="motivation">تحديات اليوم، مهارات الغد</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+
+            <!-- Contact Info -->
+            <div class="contact-info" data-aos="fade-right">
+                <h2>ابدأ رحلتك معنا الآن</h2>
+                <p>
+                    سواء كنت تريد تعلم البرمجة، بناء مهارات حقيقية، أو استكشاف فرص جديدة، نحن هنا لنرشدك منذ أول خطوة.
+                </p>
+
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>progivyacademy@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <h3>01040700072</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1C2jzarxDP/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://wa.me/201234567890" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form 
+                class="contact-form" 
+                action="https://formspree.io/f/mreabbwp"
+                method="POST"
+                data-aos="fade-left"
+                id="contactForm"
+            >
+                <!-- Hidden input for thank you page -->
+                <input type="hidden" name="_next" value="thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="الاسم" required>
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="الموضوع" required>
+                    <i class="fas fa-tag"></i>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>إرسال الرسالة</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top">
+        <!-- الشمال: اللوجو والاسم -->
+        <div class="footer-brand floating-logo">
+            <span>Progivy</span>
+            <img src="Images/logoo.jpeg" alt="Progivy Logo">
+            <!-- <span>Progivy</span> -->
+        </div>
+
+        <!-- اليمين: روابط الصفحات -->
+        <ul class="footer-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#features">عن Progivy</a></li>
+            <li><a href="#courses">الكورسات</a></li>
+            <li><a href="#faq">الأسئلة الشائعة</a></li>
+            <li><a href="#highlights">كيف نعلم</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </div>
+
+    <!-- الوسط: الجملة التشجيعية -->
+    <p class="footer-cta">ابدأ رحلتك في البرمجة اليوم وابدأ في بناء مستقبلك</p>
+
+    <!-- الأسفل: حقوق الموقع -->
+    <p class="footer-rights">&copy; 2026 Progivy. جميع الحقوق محفوظة.</p>
+</footer>
+
+
+<button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+
+<script>
+document.getElementById("langToggle").onclick = () => {
+    window.location.href = "index.html";
+};
+</script>
+
+</body>
+</html>

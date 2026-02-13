@@ -41,6 +41,19 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+const langToggle = document.getElementById("langToggle");
+
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    if (document.documentElement.lang === "en") {
+      window.location.href = "index-ar.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+}
+
+
 // Close menu when clicking nav links
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
